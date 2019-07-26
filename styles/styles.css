@@ -84,10 +84,7 @@ input, button{
   cursor: pointer;
 }
 
-#answerHolder {
-  display: none;
 
-}
 
 .bg-dark {
     background-color: #000000!important;

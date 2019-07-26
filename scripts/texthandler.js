@@ -7,15 +7,22 @@ let newPhrase =  ""
 let secretResponse = []
 let answer =""
 
+function hideAnswer(){
 
+document.getElementById("answerHolder").style.display = "none";
+
+console.log("hello")
+
+}
 
 function showAnswer(){
 
 
 
   answer = answer.replace(".", "")
-  document.getElementById("answerHolder").innerHTML = "According to my records here is the answer: " + answerx
-  document.getElementById("answerHolder").style.display = "block"
+  document.getElementById("answerHolder").innerHTML =  answer
+  document.getElementById("answerHolder").style.display = "block";
+  console.log("The answer is " + answer)
 }
 
 
@@ -61,3 +68,4 @@ document.onkeypress = function (e) {
 
 
 };
+hideAnswer()
